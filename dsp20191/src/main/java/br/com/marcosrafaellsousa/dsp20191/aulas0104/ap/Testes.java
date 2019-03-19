@@ -10,13 +10,6 @@ public class Testes {
 
         Escritor escritor = new Escritor();
 
-        escritor.CriaArquivo(relativePath);
-        escritor.AdicionaLinha(relativePath, "bom dia, esta deve ser a segunda linha");
-        escritor.AdicionaLinha(relativePath, "boa tarde, tenho q escrever esta e mais 3 linhas");
-        escritor.AdicionaLinha(relativePath, "boa noite, faltam 2 linhas");
-        escritor.AdicionaLinha(relativePath, "boa madrugada, so mais uma");
-        escritor.AdicionaLinha(relativePath, "boa manha, essa e a ultima linha");
-
         Leitor leitor = new Leitor();
 
         leitor.ImprimeArquivo(relativePath);
