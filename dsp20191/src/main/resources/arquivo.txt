@@ -1,1 +1,6 @@
 ola, estou testando escrever um texto
+bom dia, esta deve ser a segunda linha
+boa tarde, tenho q escrever esta e mais 3 linhas
+boa noite, faltam 2 linhas
+boa madrugada, so mais uma
+boa manha, essa e a ultima linha

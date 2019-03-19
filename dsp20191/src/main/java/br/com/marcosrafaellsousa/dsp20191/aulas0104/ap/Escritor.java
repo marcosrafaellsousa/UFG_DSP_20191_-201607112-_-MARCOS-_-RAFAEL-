@@ -4,26 +4,30 @@ import java.io.*;
 
 public class Escritor {
 
-    public void CriaArquivo (){
-        // Nome do arquivo
-
-        String fileSeparator = System.getProperty("file.separator");
-
-        String relativePath = "src" + fileSeparator + "main" + fileSeparator + "resources" + fileSeparator
-                + "arquivo.txt";
+    public void CriaArquivo (String fileName){
 
         try {
-            FileWriter fileWriter =
-                    new FileWriter(relativePath);
-
-            BufferedWriter bufferedWriter =
-                    new BufferedWriter(fileWriter);
-
+            FileWriter fileWriter = new FileWriter(fileName);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write("ola, estou testando escrever um texto");
             bufferedWriter.close();
         }
         catch(IOException ex) {
             System.out.println("Erro ao criar o arquivo");
+        }
+    }
+
+    public void AdicionaLinha (String fileName, String linha) {
+
+        try {
+            FileWriter fileWriter = new FileWriter(fileName,true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.newLine();
+            bufferedWriter.write(linha);
+            bufferedWriter.close();
+        }
+        catch(IOException ex) {
+            System.out.println("Erro ao adicionar linhas ao arquivo");
         }
     }
 }
