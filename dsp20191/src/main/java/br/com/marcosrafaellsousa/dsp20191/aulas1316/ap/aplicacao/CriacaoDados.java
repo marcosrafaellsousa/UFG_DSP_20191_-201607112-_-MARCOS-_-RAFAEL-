@@ -4,7 +4,6 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Cargo;
 import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Departamento;
 import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Funcionario;
 import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Lotacao;
-
 import java.util.ArrayList;
 import java.util.Random;
 
