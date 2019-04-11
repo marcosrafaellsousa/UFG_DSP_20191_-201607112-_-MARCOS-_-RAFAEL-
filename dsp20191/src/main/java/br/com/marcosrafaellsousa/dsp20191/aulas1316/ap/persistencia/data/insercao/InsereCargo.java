@@ -5,7 +5,7 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.persistencia.base.Persist
 
 public class InsereCargo extends PersistenciaJdbc{
 
-    public boolean persisteAluno(Cargo cargo) throws Exception{
+    public boolean persisteCargo(Cargo cargo) throws Exception{
 
         preparaPersistencia();
 

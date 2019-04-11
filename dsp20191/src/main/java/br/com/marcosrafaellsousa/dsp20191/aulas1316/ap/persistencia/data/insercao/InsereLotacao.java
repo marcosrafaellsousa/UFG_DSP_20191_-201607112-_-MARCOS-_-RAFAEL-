@@ -5,7 +5,7 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.persistencia.base.Persist
 
 public class InsereLotacao extends PersistenciaJdbc{
 
-    public boolean persisteAluno(Lotacao lotacao) throws Exception{
+    public boolean persisteLotacao(Lotacao lotacao) throws Exception{
 
         preparaPersistencia();
 
@@ -15,6 +15,7 @@ public class InsereLotacao extends PersistenciaJdbc{
                 "','" + lotacao.getDataFinal() +
                 "','" + lotacao.getCargo().getId() +
                 "','" + lotacao.getDepartamento().getId() +
+                "','" + lotacao.getFuncionario().getId() +
                 "')";
 
         stmt.executeUpdate(sql);

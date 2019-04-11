@@ -4,10 +4,11 @@ import java.util.Date;
 
 public class Lotacao {
     private Long id;
-    private Date dataInicial;
-    private Date dataFinal;
+    private String dataInicial;
+    private String dataFinal;
     private Cargo cargo;
     private Departamento departamento;
+    private Funcionario funcionario;
 
     public Long getId() {
         return id;
@@ -15,22 +16,6 @@ public class Lotacao {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Date getDataInicial() {
-        return dataInicial;
-    }
-
-    public void setDataInicial(Date dataInicial) {
-        this.dataInicial = dataInicial;
-    }
-
-    public Date getDataFinal() {
-        return dataFinal;
-    }
-
-    public void setDataFinal(Date dataFinal) {
-        this.dataFinal = dataFinal;
     }
 
     public Cargo getCargo() {
@@ -47,5 +32,41 @@ public class Lotacao {
 
     public void setDepartamento(Departamento departamento) {
         this.departamento = departamento;
+    }
+
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public String getDataInicial() {
+        return dataInicial;
+    }
+
+    public void setDataInicial(String dataInicial) {
+        this.dataInicial = dataInicial;
+    }
+
+    public String getDataFinal() {
+        return dataFinal;
+    }
+
+    public void setDataFinal(String dataFinal) {
+        this.dataFinal = dataFinal;
+    }
+
+    @Override
+    public String toString() {
+        return "Lotacao{" +
+                "id=" + id +
+                ", dataInicial='" + dataInicial + '\'' +
+                ", dataFinal='" + dataFinal + '\'' +
+                ", cargo=" + cargo +
+                ", departamento=" + departamento +
+                ", funcionario=" + funcionario +
+                '}';
     }
 }

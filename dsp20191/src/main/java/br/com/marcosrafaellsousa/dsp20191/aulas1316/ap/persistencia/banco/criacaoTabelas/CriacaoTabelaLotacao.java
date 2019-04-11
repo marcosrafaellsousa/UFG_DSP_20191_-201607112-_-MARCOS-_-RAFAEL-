@@ -12,16 +12,12 @@ public class CriacaoTabelaLotacao extends PersistenciaJdbc {
 
         String sql = " CREATE TABLE IF NOT EXISTS LOTACAO (\n" +
                 " id LONG NOT NULL,\n" +
-                " nome VARCHAR(255) NOT NULL,\n" +
-                " dataInicial DATE NOT NULL,\n" +
-                " dataFinal DATE,\n" +
+                " dataInicial VARCHAR(10) NOT NULL,\n" +
+                " dataFinal VARCHAR(10),\n" +
                 " idCargo VARCHAR(20) NOT NULL,\n" +
                 " idDepartamento VARCHAR(20) NOT NULL,\n" +
-                " PRIMARY KEY (id),\n" +
-                " FOREIGN KEY (`idCargo`)\n" +
-                " REFERENCES `AULAS1316`.`CARGO` (`id`),\n" +
-                " FOREIGN KEY (`idDepartamento`)\n" +
-                " REFERENCES `AULAS1316`.`DEPARTAMENTO` (`id`));";
+                " idFuncionario VARCHAR(20) NOT NULL,\n" +
+                " PRIMARY KEY (id))\n";
 
         stmt.executeUpdate(sql);
 

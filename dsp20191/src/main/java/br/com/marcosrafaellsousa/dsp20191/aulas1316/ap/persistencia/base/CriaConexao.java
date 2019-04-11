@@ -11,7 +11,7 @@ public class CriaConexao {
     public static final String JDBC_DRIVER = "org.h2.Driver";
 
     //Database file URL
-    public static final String DB_FILE_URL = "jdbc:h2:~/aluno";
+    public static final String DB_FILE_URL = "jdbc:h2:~/lotacao";
 
     //Database memory URL
     public static final String DB_MEMORY_URL = "jdbc:h2:mem:testdb";

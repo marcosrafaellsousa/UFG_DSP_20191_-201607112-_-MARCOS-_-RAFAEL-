@@ -5,7 +5,7 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.persistencia.base.Persist
 
 public class InsereFuncionario extends PersistenciaJdbc{
 
-    public boolean persisteAluno(Funcionario funcionario) throws Exception{
+    public boolean persisteFuncionario(Funcionario funcionario) throws Exception{
 
         preparaPersistencia();
 

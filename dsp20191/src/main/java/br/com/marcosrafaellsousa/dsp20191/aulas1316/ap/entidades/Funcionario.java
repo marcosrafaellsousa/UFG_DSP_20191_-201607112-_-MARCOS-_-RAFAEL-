@@ -28,4 +28,13 @@ public class Funcionario {
     public void setMatricula(long matricula) {
         this.matricula = matricula;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", matricula=" + matricula +
+                '}';
+    }
 }
