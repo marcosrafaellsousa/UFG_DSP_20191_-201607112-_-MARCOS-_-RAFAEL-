@@ -4,11 +4,11 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Funcionario;
 import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.persistencia.base.PersistenciaJdbc;
 
 public class AlterarFuncionario extends PersistenciaJdbc {
-    public boolean persisteAluno(Funcionario funcionario) throws Exception{
+    public boolean alterarFuncionario(Funcionario funcionario) throws Exception{
 
         preparaPersistencia();
 
-        String sql = "UPDATE CARGO " +
+        String sql = "UPDATE FUNCIONARIO " +
                 "SET id = '" + funcionario.getId() +
                 "', nome = '" + funcionario.getNome() +
                 "', matricula = '" + funcionario.getMatricula() +

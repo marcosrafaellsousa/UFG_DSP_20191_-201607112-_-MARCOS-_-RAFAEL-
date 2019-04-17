@@ -4,7 +4,7 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Cargo;
 import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.persistencia.base.PersistenciaJdbc;
 
 public class AlterarCargo extends PersistenciaJdbc {
-    public boolean persisteAluno(Cargo cargo) throws Exception{
+    public boolean alterarCargo(Cargo cargo) throws Exception{
 
         preparaPersistencia();
 

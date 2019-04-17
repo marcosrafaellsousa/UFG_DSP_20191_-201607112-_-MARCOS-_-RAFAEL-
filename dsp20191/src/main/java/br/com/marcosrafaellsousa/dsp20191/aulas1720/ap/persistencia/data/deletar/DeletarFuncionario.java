@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 
 public class DeletarFuncionario extends PersistenciaJdbc{
 
-    public boolean deletarCargo(Long id){
+    public boolean deletarFuncionarioPorId(Long id){
         boolean result = false;
         try {
             Funcionario funcionario = new ConsultarFuncionario().consultarPorId(id);

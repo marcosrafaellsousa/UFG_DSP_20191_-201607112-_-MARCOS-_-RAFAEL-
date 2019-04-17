@@ -4,7 +4,7 @@ import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.entidades.Departamento;
 import br.com.marcosrafaellsousa.dsp20191.aulas1316.ap.persistencia.base.PersistenciaJdbc;
 
 public class AlterarDepartamento extends PersistenciaJdbc {
-    public boolean persisteAluno(Departamento departamento) throws Exception{
+    public boolean alterarDepartamento(Departamento departamento) throws Exception{
 
         preparaPersistencia();
 

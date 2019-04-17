@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 
 public class DeletarLotacao extends PersistenciaJdbc{
 
-    public boolean deletarCargo(Long id){
+    public boolean deletarLotacaoPorId(Long id){
         boolean result = false;
         try {
             Lotacao lotacao = new ConsultarLotacao().consultarPorId(id);
@@ -20,10 +20,10 @@ public class DeletarLotacao extends PersistenciaJdbc{
                 pstmt.setLong(1,id);
                 pstmt.executeUpdate();
                 result = true;
-                System.out.println("a Lotacao foi excluido do banco de dados");
+                System.out.println("A Lotacao foi excluido do banco de dados");
                 pstmt.close();
             }else{
-                System.out.println("Não foi encontrado Lotacao com id = " + id);
+                System.out.println("Não foi encontrada Lotacao com id = " + id);
             }
         }catch (Exception e){
             e.printStackTrace();

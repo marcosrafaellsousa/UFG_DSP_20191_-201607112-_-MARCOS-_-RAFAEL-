@@ -64,9 +64,9 @@ public class Lotacao {
                 "id=" + id +
                 ", dataInicial='" + dataInicial + '\'' +
                 ", dataFinal='" + dataFinal + '\'' +
-                ", cargo=" + cargo +
-                ", departamento=" + departamento +
-                ", funcionario=" + funcionario +
+                ", cargo=" + cargo.getId() +
+                ", departamento=" + departamento.getId() +
+                ", funcionario=" + funcionario.getId() +
                 '}';
     }
 }

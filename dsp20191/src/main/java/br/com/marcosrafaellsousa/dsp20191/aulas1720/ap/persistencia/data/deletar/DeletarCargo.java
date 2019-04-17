@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 
 public class DeletarCargo extends PersistenciaJdbc{
 
-    public boolean deletarCargo(Long id){
+    public boolean deletarCargoPorId(Long id){
         boolean result = false;
         try {
             Cargo cargo = new ConsultarCargo().consultarPorId(id);

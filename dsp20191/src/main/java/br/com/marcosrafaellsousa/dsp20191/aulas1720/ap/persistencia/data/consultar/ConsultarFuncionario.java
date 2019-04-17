@@ -17,7 +17,7 @@ public class ConsultarFuncionario extends PersistenciaJdbc{
 
         preparaPersistencia();
 
-        String sql = "SELECT * FROM DEPARTAMENTO WHERE id = ?";
+        String sql = "SELECT * FROM FUNCIONARIO WHERE id = ?";
         PreparedStatement pstmt = connection.prepareStatement(sql);
         pstmt.setLong(1,id);
 
