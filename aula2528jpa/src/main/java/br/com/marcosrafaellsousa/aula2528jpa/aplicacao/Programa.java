@@ -13,21 +13,21 @@ public class Programa {
         veiculo1.setModelo("RX-7");
         System.out.println("Criando o veiculo");
         iRepositorioVeiculo.create(veiculo1);
-
-        System.out.println(veiculo1.getId());
+        System.out.println();
 
         veiculo1.setAnoFabricacao(2009);
 
         System.out.println("Atualizando o veiculo");
         iRepositorioVeiculo.update(veiculo1);
+        System.out.println();
 
         System.out.println(iRepositorioVeiculo.read((long)1));
 
         System.out.println("Deletando o veiculo");
         iRepositorioVeiculo.delete(veiculo1);
+        System.out.println();
 
         System.out.println("Fechando conexao");
         iRepositorioVeiculo.close();
-
     }
 }
